@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6FF17D062059F19A00695E04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17D052059F19A00695E04 /* AppDelegate.swift */; };
-		6FF17D082059F19A00695E04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17D072059F19A00695E04 /* ViewController.swift */; };
+		6FF17D082059F19A00695E04 /* BCVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17D072059F19A00695E04 /* BCVController.swift */; };
 		6FF17D0B2059F19A00695E04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF17D092059F19A00695E04 /* Main.storyboard */; };
 		6FF17D0D2059F19A00695E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF17D0C2059F19A00695E04 /* Assets.xcassets */; };
 		6FF17D102059F19A00695E04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF17D0E2059F19A00695E04 /* LaunchScreen.storyboard */; };
 		6FF17D1B2059F19A00695E04 /* Binary_CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17D1A2059F19A00695E04 /* Binary_CounterTests.swift */; };
 		6FF17D262059F19A00695E04 /* Binary_CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17D252059F19A00695E04 /* Binary_CounterUITests.swift */; };
+		6FF17D342059F6B500695E04 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17D332059F6B500695E04 /* CustomCell.swift */; };
+		6FF17D36205A147600695E04 /* BCVControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF17D35205A147600695E04 /* BCVControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		6FF17D022059F19A00695E04 /* Binary Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Binary Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF17D052059F19A00695E04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6FF17D072059F19A00695E04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6FF17D072059F19A00695E04 /* BCVController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCVController.swift; sourceTree = "<group>"; };
 		6FF17D0A2059F19A00695E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6FF17D0C2059F19A00695E04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FF17D0F2059F19A00695E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		6FF17D212059F19A00695E04 /* Binary CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Binary CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF17D252059F19A00695E04 /* Binary_CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binary_CounterUITests.swift; sourceTree = "<group>"; };
 		6FF17D272059F19A00695E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FF17D332059F6B500695E04 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		6FF17D35205A147600695E04 /* BCVControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCVControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				6FF17D052059F19A00695E04 /* AppDelegate.swift */,
-				6FF17D072059F19A00695E04 /* ViewController.swift */,
+				6FF17D072059F19A00695E04 /* BCVController.swift */,
 				6FF17D092059F19A00695E04 /* Main.storyboard */,
+				6FF17D332059F6B500695E04 /* CustomCell.swift */,
+				6FF17D35205A147600695E04 /* BCVControllerDelegate.swift */,
 				6FF17D0C2059F19A00695E04 /* Assets.xcassets */,
 				6FF17D0E2059F19A00695E04 /* LaunchScreen.storyboard */,
 				6FF17D112059F19A00695E04 /* Info.plist */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FF17D082059F19A00695E04 /* ViewController.swift in Sources */,
+				6FF17D36205A147600695E04 /* BCVControllerDelegate.swift in Sources */,
+				6FF17D082059F19A00695E04 /* BCVController.swift in Sources */,
+				6FF17D342059F6B500695E04 /* CustomCell.swift in Sources */,
 				6FF17D062059F19A00695E04 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3YTYXM9Q86;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Binary Counter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.Binary-Counter";
@@ -442,7 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3YTYXM9Q86;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Binary Counter/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.Binary-Counter";
